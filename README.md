@@ -5,9 +5,9 @@
 SkillSwap is a student-focused peer-to-peer skill exchange platform designed to help students connect, share their skills, and learn new skills from each other.
 
 ---
-## 🌐 Live Demo
+## 🌐 Live Website
 
-🔗 **[Visit SkillSwap Website](https://Tanusri-Dummu.github.io/SkillSwap/)**
+🚀 [Visit SkillSwap Website](https://tanusri-dummu.github.io/Skill-Swap/)
 
 Experience the SkillSwap platform live in your browser.
 
