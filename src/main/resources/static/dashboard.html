@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>✦</span> SkillSwap
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#requests">Requests</a>
+    </nav>
+
+</header>
+
+
+<main style="padding:70px 9%;">
+
+    <div style="margin-bottom:45px;">
+        <p style="color:#a970ff;font-size:13px;font-weight:700;">
+            STUDENT DASHBOARD
+        </p>
+
+        <h1 style="font-size:45px;margin:8px 0;">
+            Welcome back, Tanusri 👋
+        </h1>
+
+        <p style="color:#858599;">
+            Discover skills and connect with students.
+        </p>
+    </div>
+
+
+    <section class="feature-grid">
+
+        <div class="feature-card">
+            <div class="icon">🎓</div>
+            <h3>My Skills</h3>
+            <p>Java · Python · Web Development</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon">📚</div>
+            <h3>Want to Learn</h3>
+            <p>Cloud Computing · UI/UX · DSA</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon">🤝</div>
+            <h3>Swap Requests</h3>
+            <p>3 pending requests</p>
+        </div>
+
+    </section>
+
+
+    <section id="skills" style="margin-top:80px;">
+
+        <h2 style="margin-bottom:25px;">
+            Recommended Skill Matches
+        </h2>
+
+        <div class="skill-grid">
+
+            <div class="skill-box">
+                <span>👩🏻‍💻</span>
+                <h3>Ananya</h3>
+                <p>Offers: UI/UX Design</p>
+                <p>Wants: Java</p>
+                <br>
+                <button onclick="requestSwap('Ananya')" class="primary-btn">
+                    Request Swap
+                </button>
+            </div>
+
+            <div class="skill-box">
+                <span>👨🏻‍💻</span>
+                <h3>Rahul</h3>
+                <p>Offers: Cloud Computing</p>
+                <p>Wants: Python</p>
+                <br>
+                <button onclick="requestSwap('Rahul')" class="primary-btn">
+                    Request Swap
+                </button>
+            </div>
+
+            <div class="skill-box">
+                <span>👩🏻‍🎨</span>
+                <h3>Meera</h3>
+                <p>Offers: Graphic Design</p>
+                <p>Wants: Web Development</p>
+                <br>
+                <button onclick="requestSwap('Meera')" class="primary-btn">
+                    Request Swap
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="requests" style="margin-top:80px;">
+
+        <h2 style="margin-bottom:25px;">
+            Recent Requests
+        </h2>
+
+        <div class="feature-card">
+
+            <p style="color:#aaaabd;">
+                🤝 Ananya wants to exchange <b>UI/UX</b> for
+                <b>Java</b>.
+            </p>
+
+            <br>
+
+            <button onclick="acceptRequest()" class="primary-btn">
+                Accept Request
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script>
+
+function requestSwap(name) {
+    alert("Swap request sent to " + name + " successfully! 🤝");
+}
+
+function acceptRequest() {
+    alert("Request accepted! You can now start learning together. 🚀");
+}
+
+</script>
+
+</body>
+</html>
